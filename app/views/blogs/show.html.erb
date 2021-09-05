@@ -58,7 +58,7 @@
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
-        <%= @blog.body 
+        <%= @blog.body %>
         <!-- body部分 下で変更します -->
         The environment of rain forests is ideal for plants: An estimated<br>
         two-thirds of the world's plant species grow in the rain forest.<br>
@@ -85,7 +85,7 @@
         a small tree mammal.
         <!-- body部分 ここまで -->
       </p>
-      <a href="#">編集</a>
+      <%= link_to "編集",edit_blog_path(@blog) %>
       <a href="#">削除</a>
       <div class="author-case">
         <div class="author-image"></div>
