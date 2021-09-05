@@ -1,8 +1,9 @@
 <h1>新規投稿</h1>
+
 <% if @blog.errors.any? %>
  <%= @blog.errors.count %>件のエラーが発生しました
- <% @blogs.errors.full_messages.each do |message| %>
-  <%= massege %>
+ <% @blog.errors.full_messages.each do |message| %>
+  <%= message %>
  <% end %>
 <% end %>
 
