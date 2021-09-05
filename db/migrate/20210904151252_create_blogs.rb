@@ -1,8 +1,8 @@
 class CreateBlogs < ActiveRecord::Migration[5.2]
   def change
     create_table :blogs do |t|
-      t.strings :title
-      t.strings :categoly
+      t.string :title
+      t.string :categoly
       t.text :body
 
       t.timestamps
